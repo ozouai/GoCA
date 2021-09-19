@@ -1,0 +1,11 @@
+authorities:
+  example.com: 
+    acme:
+      email: test@example.com
+      keyFile: /storage/acme.key
+      solvers:
+        - patterns:
+            - '*.example.com'
+          dns:
+            endpoint: goca-dns-cloudflare.goca.svc.cluster.local
+            sharedKeyFile: /goca-dns-cloudflare/shared.key
